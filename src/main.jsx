@@ -9,6 +9,7 @@ import {
 import Root from './components/Root/Root.jsx';
 import Home from './components/Home/Home.jsx';
 import Details from './components/Details/Details.jsx';
+import Donation from './components/Donation/Donation.jsx';
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/donation",
-        element: <div>about</div>
+        element: <Donation></Donation>,
+        loader: () => fetch('donation.json')
       },
       {
         path: "/statistics",
