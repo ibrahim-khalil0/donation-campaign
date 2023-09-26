@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
 
 const Card = ({card}) => {
-    const {image, title, category, card_bg, category_bg, text_color} = card
-    console.log(card)
+    const {id, image, title, category, card_bg, category_bg, text_color} = card
     return (
-        <Link to={"/details"}>
+        <Link to={`/details/${id}`}>
             <div style={{backgroundColor: `${card_bg}`}} className="rounded-md">
                 <img src={image} alt="" className="w-full h-40"/>
                 <div className="p-3">
