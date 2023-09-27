@@ -4,7 +4,7 @@ const DonatedCard = ({card}) => {
     return (
         <div style={{backgroundColor: `${card_bg}`}} className="flex rounded-md">
             <div className="w-1/3">
-                <img src={image} alt="" className="w-full h-48 rounded-s-md"/>
+                <img src={image} alt="" className="w-full h-full rounded-s-md"/>
             </div>
             <div className="w-2/3 p-5 space-y-3">
                 <span style={{backgroundColor: `${category_bg}`, color: `${text_color}`}} className="text-sm px-4 py-2 rounded-sm">{category}</span>

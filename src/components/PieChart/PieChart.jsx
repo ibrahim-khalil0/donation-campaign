@@ -13,10 +13,10 @@ const PieChart = () => {
 
     const availableDonation = 12 - totalDonate
     return (
-        <div>
-            <div>
+        
+            <div className='w-[90%]'>
                 <Chart
-                className="w-[800px] mx-auto"
+                className="w-[100%] mx-auto"
                 type='pie'
 
                 height={500}
@@ -31,7 +31,7 @@ const PieChart = () => {
 
                 </Chart>
             </div>
-        </div>
+        
     );
 };
 

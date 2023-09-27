@@ -2,7 +2,7 @@ import { NavLink } from 'react-router-dom';
 import Logo from '../../assets/Logo.png'
 const Header = () => {
     return (
-        <div className='flex justify-between w-[90%] mx-auto items-center py-10'>
+        <div className='flex flex-col sm:flex-row gap-5 justify-between w-[90%] mx-auto items-center py-10'>
             <div>
                 <img src={Logo} alt="" />
             </div>
