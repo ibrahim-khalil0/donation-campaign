@@ -18,4 +18,15 @@ const saveDonate = (id, toast) => {
         toast('Already Donated It')
     }
 }
-export {getAllDonation, saveDonate}
+
+
+const getSearchValue = (cards, setCard) =>{
+    const searchField = document.getElementById('search')
+    const searchValue = searchField.value.toLowerCase()
+    const searchCategory = cards.filter(card => card.category.toLowerCase() == searchValue)
+    
+    if(searchCategory.length){
+        setCard(searchCategory)
+    }
+}
+export {getAllDonation, saveDonate, getSearchValue}

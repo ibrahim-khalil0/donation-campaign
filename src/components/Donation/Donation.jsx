@@ -4,8 +4,11 @@ import DonatedCard from "../DonatedCard/DonatedCard";
 import { useState } from "react";
 
 const Donation = () => {
-    const allDonationsId = getAllDonation()
+    
     const allDonation = useLoaderData()
+
+
+    const allDonationsId = getAllDonation()
 
     const [displayCard, setDisplayCard] = useState(4)
     const donateList = []
@@ -20,6 +23,7 @@ const Donation = () => {
         const donatedData = allDonation.find(data => data.id == donateId)
         donateList.push(donatedData)
     }
+
    
     return (
         <div className="w-[90%] mx-auto">

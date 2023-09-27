@@ -15,7 +15,7 @@ const Home = () => {
     }, [])
     return (
         <div>
-            <Banner></Banner>
+            <Banner cards={donationCard} setCard={setDonationCard}></Banner>
             <div className="px-[10%] grid grid-cols-4 gap-5 pt-28 pb-40">
                 {
                     donationCard.map(card => <Card key={card.id} card={card}></Card>)
